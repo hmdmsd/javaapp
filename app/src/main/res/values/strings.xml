@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MessaoudTP2</string>
+    <string name="name"> Name : </string>
+    <string name="surname"> Surname : </string>
+    <string name="birthday"> Birthday : </string>
+    <string name="city"> City : </string>
+    <string name="reset_action">Reset</string>
+    <string name="dateformat">dd/mm/yyyy</string>
+
+    <string name="pickDateActivity">Pick Date String</string>
+    <string name="resultpreview"> Result will show up here !</string>
+    <string name="abondonner">Abondonner</string>
+    <string name="valider">Valider</string>
+</resources>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:onClick="validateAction"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/myLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="34dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="121dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="131dp"
+                android:layout_marginBottom="10dp"
+                android:text="Messaoud and Bechir App"
+                android:textSize="24sp"
+                android:textColor="#8A2BE2"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="130dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/inputName"
+                app:layout_constraintEnd_toStartOf="@+id/inputName"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/inputName" />
+
+            <EditText
+                android:id="@+id/inputName"
+                android:layout_width="204dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="7dp"
+                android:ems="10"
+                android:hint="your Name"
+                android:inputType="text"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="233dp">
+
+            <EditText
+                android:id="@+id/inputSurname"
+                android:layout_width="215dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="9dp"
+                android:ems="10"
+                android:hint="your Surname"
+                android:inputType="text"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/surname"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/inputSurname"
+                app:layout_constraintEnd_toStartOf="@+id/inputSurname"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/inputSurname"
+                app:layout_constraintVertical_bias="0.421" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="321dp">
+
+            <TextView
+                android:id="@+id/inputBirthday"
+                android:layout_width="199dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginBottom="28dp"
+                android:onClick="showDatePicker"
+                android:text="@string/dateformat"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/birthday"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/inputBirthday"
+                app:layout_constraintEnd_toStartOf="@+id/inputBirthday"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/inputBirthday"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="420dp">
+
+            <Spinner
+                android:id="@+id/inputCity"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="37dp"
+                android:layout_marginBottom="37dp"
+                android:entries="@array/departments"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/inputCity"
+                app:layout_constraintEnd_toStartOf="@+id/inputCity"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/inputCity" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/phoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/inputPhone"
+                android:layout_width="209dp"
+                android:layout_height="49dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/addPhoneBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/addPhoneBtn"
+                android:layout_width="49dp"
+                android:layout_height="56dp"
+                android:layout_marginEnd="4dp"
+                android:text="+"
+                app:layout_constraintBottom_toBottomOf="@+id/inputPhone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/inputPhone"
+                app:layout_constraintTop_toTopOf="@+id/inputPhone"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/phoneNumbersLayout"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="369dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="65dp">
+
+            <Button
+                android:id="@+id/validateBtn"
+                android:layout_width="285dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="1dp"
+                android:textColor="#FFFFFF"
+                android:text="Validate"
+                android:background="@drawable/rounded_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.297"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>
